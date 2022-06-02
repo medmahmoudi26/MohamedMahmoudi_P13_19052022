@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './LoginPage.scss'
 import { Redirect } from 'react-router';
 import { useSelector,useDispatch } from 'react-redux';
-import { loginRequest } from '../../action';
+import { loginRequest } from '../../action/index';
 
 export default function LoginPage() {
     const user = useSelector((state) => state.user); //get user state
